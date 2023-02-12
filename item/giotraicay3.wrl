@@ -1,0 +1,44 @@
+#VRML V2.0 utf8
+Transform {
+    children [
+        Inline {
+            url "gio.wrl"
+        }
+    ]
+}
+Transform {
+	translation	0 2.1 -0.73 
+	scale 0.15 0.15 0.15
+    children [
+        Inline {
+            url "hang\buoi.wrl"
+        }
+    ]
+}
+Transform {
+	translation	-0.35 2 0.3 
+	scale 1 1 1
+    children [
+        Inline {
+            url "hang\QuaCam.wrl"
+        }
+    ]
+}
+Transform {
+	translation	0.35 2 0.225 
+	scale 1 1 1
+    children [
+        Inline {
+            url "hang\QuaCam.wrl"
+        }
+    ]
+}
+Transform {
+	translation	0.05 2 0.95 
+	scale 1 1 1
+    children [
+        Inline {
+            url "hang\QuaCam.wrl"
+        }
+    ]
+}

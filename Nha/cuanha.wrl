@@ -1,0 +1,169 @@
+#VRML V2.0 utf8
+
+DEF canhcua1 Transform {
+	 translation  -0.8 0 0
+	children [
+		DEF	cylsen CylinderSensor {
+			enabled	TRUE
+			maxAngle 0
+			minAngle -3.14
+		}
+		Transform {
+			translation	0.45 0 0 
+			children [
+		Shape {
+			appearance Appearance {
+				material Material {diffuseColor 1 0 1}
+			}
+			geometry Box {size 1.0 2.0 0.05}
+		}
+		Transform {
+			translation	0 1 0 
+			children [
+				DEF thanhcua Shape {
+					appearance Appearance	{
+							texture ImageTexture{
+								  url "Images/vango.jpg"
+								  repeatS TRUE
+								  repeatT TRUE
+								  }
+					}
+					geometry Box{ size 1.0 0.1 0.05}
+
+						}
+
+			]
+		}
+		Transform {
+			translation	0 -1 0
+			children USE thanhcua
+		}
+		Transform {
+			translation	0 0 0
+			children USE thanhcua
+		}
+		Transform {
+			translation	-0.45 0 0
+			children [
+			   DEF thanhcua1 Shape {
+					appearance Appearance	{
+						  texture ImageTexture{
+								  url "Images/vango.jpg"
+								  repeatS TRUE
+								  repeatT TRUE
+								  }
+					}
+					geometry Box{ size 0.1 2.0 0.05}
+
+						}
+
+			]
+		}
+		Transform {
+			translation	0.45 0 0
+			children USE thanhcua1
+		}
+		Transform {
+			translation	0 0 0
+			children USE thanhcua1
+		}
+		Transform {
+			translation	0.45 0 0 
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {diffuseColor 0 1 0}
+					}
+					geometry Sphere	{radius 0.1}
+				}
+			]
+		}
+	]
+		}
+	]
+}
+DEF canhcua2 Transform {
+	 translation 1.1 0 0 
+	children [
+		DEF	cylsen1 CylinderSensor {
+			enabled	TRUE
+			maxAngle 3.14
+			minAngle 0
+		}
+		Transform {
+			translation	-0.45 0 0 
+			children [
+		Shape {
+			appearance Appearance {
+				material Material {diffuseColor 1 0 1}
+			}
+			geometry Box {size 1.0 2.0 0.05}
+		}
+		Transform {
+			translation	0 1 0 
+			children [
+				DEF thanhcua4 Shape {
+					appearance Appearance	{
+						texture ImageTexture{
+								  url "Images/vango.jpg"
+								  repeatS TRUE
+								  repeatT TRUE
+								  }
+					}
+					geometry Box{ size 1.0 0.1 0.05}
+
+						}
+
+			]
+		}
+		Transform {
+			translation	0 -1 0
+			children USE thanhcua
+		}
+		Transform {
+			translation	0 0 0
+			children USE thanhcua
+		}
+		Transform {
+			translation	-0.45 0 0
+			children [
+			   DEF thanhcua5 Shape {
+					appearance Appearance	{
+						texture ImageTexture{
+								  url "Images/vango.jpg"
+								  repeatS TRUE
+								  repeatT TRUE
+								  }
+					}
+					geometry Box{ size 0.1 2.0 0.05}
+
+						}
+
+			]
+		}
+		Transform {
+			translation	0.45 0 0
+			children USE thanhcua1
+		}
+		Transform {
+			translation	0 0 0
+			children USE thanhcua1
+		}
+		Transform {
+			translation	-0.45 0 0 
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {diffuseColor 0 1 0}
+					}
+					geometry Sphere	{radius 0.1}
+				}
+			]
+		}
+	]
+		}
+	]
+}
+
+ROUTE cylsen.rotation_changed TO canhcua1.rotation
+ROUTE cylsen1.rotation_changed TO canhcua2.rotation

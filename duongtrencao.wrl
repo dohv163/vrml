@@ -1,0 +1,34 @@
+#VRML V2.0 utf8
+
+Transform {
+	translation 0 0 0
+	children [
+		Inline {
+		 url "cot.wrl"
+		}
+	]	
+}
+Transform {
+	translation	30 0 0
+	children [
+		Inline {
+		url	"cot.wrl"
+		}
+	]
+}
+Transform {
+	translation	60 0 0
+	children [
+		Inline {
+		url	"cot.wrl"
+		}
+	]
+}
+Transform {
+	translation	90 0 0
+	children [
+		Inline {
+		url	"cot.wrl"
+		}
+	]
+}

@@ -1,0 +1,192 @@
+#VRML V2.0 utf8
+DEF	quat Transform {
+	children [
+		DEF	vequat Transform {
+			children[
+				Shape {
+
+					geometry Sphere {
+
+					radius 0.25
+
+					}
+					}
+					Transform {
+						translation	0 0.75 0
+						children [ Shape {
+
+								geometry Cone {
+
+								height 0.5
+
+								bottomRadius 0.1
+
+								bottom TRUE
+
+								side TRUE
+
+								}
+
+								}
+
+						]
+					}
+					Transform {
+						translation	0 0.5 0
+						children [
+					
+							Shape {
+
+								geometry Cylinder{
+
+								height 0.5
+
+								radius 0.05
+
+								bottom TRUE
+
+								top TRUE
+
+								side TRUE
+
+								}
+
+}
+
+						]
+					}
+					Transform {
+						translation	0.65 0 0
+						children [DEF canhquat Shape {
+					appearance Appearance {
+
+					material Material { 
+
+					diffuseColor 0.5 0.5 0.5
+							  }	
+					      }
+
+						  geometry Box{size 1.75 0.05 0.35}
+				}]
+					}
+					Transform {
+						translation	0.25 0 0.5
+						children [
+						Transform{
+						
+						translation	-0.65 0 0
+						rotation 0 1 0 1
+						children [
+						USE canhquat ]
+					}
+						]
+					}
+						Transform {
+						translation	-0.35 0 -0.5
+						children [
+						Transform{
+						rotation 0 1 0 -1
+						children [
+						USE canhquat ]
+					}
+						]
+					}
+				
+				
+						
+			]
+		}
+	
+	DEF OpenClock TimeSensor {
+
+    enabled TRUE
+
+    cycleInterval 1
+
+    loop TRUE
+	startTime 1
+	stopTime 5
+
+}
+
+DEF quatOpen OrientationInterpolator {
+
+ key [ 0.0, 1.0 ]
+
+ keyValue [ 1 0  0 0, 0 1 0 3.14]
+
+}
+
+
+DEF ma Script {
+
+eventIn SFBool turnOn
+
+eventOut SFBool On
+
+eventOut SFBool Off
+
+field SFBool turn FALSE
+
+url "javascript:
+
+function turnOn(val){
+
+if(val){
+
+turn = !turn;
+
+if(turn)
+
+{
+
+On= TRUE;
+
+                        Off=FALSE;
+
+            }
+
+        else
+
+        {
+
+                        On=FALSE;
+
+Off=TRUE;
+
+        }
+
+            }
+
+    }
+
+    "
+
+}
+	]
+
+}
+ 	DEF	congtacquat Transform {
+			translation	6.4 -2 0
+			children [
+				DEF cen TouchSensor {}
+				Shape {
+						appearance  Appearance {
+				texture ImageTexture{
+								  url "Images/url.jpg"
+								  repeatS TRUE
+								  repeatT TRUE
+								  }
+						}
+
+						geometry Box{ size 0.1 0.5 0.5 }
+
+						}
+
+			]
+	}
+ROUTE cen.isActive TO ma.turnOn
+ROUTE ma.On TO  OpenClock.enabled
+ROUTE cen.touchTime TO OpenClock.startTime
+ROUTE OpenClock.fraction_changed TO quatOpen.set_fraction
+ROUTE quatOpen.value_changed TO quat.rotation

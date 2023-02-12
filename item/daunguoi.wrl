@@ -1,0 +1,187 @@
+#VRML V2.0 utf8
+
+Transform
+{
+	translation	0 2 0
+	children
+	[
+		Shape
+		{
+			appearance Appearance
+			{
+				material Material
+				{
+					diffuseColor 0 0 0
+					specularColor .29 .3 .29
+					ambientIntensity 0
+					shininess .08
+				}
+			}
+			geometry Sphere	
+			{
+				radius 0.5
+			}
+		}
+	]
+}
+   Transform
+{
+	translation	0 1.9 0
+	children
+	[
+		Shape
+		{
+			appearance Appearance
+			{
+				material Material {
+				ambientIntensity .0567
+					diffuseColor .62 .61 .52
+					specularColor .53 .56 .08
+					shininess .19
+					emissiveColor .18 .18 .15
+
+				}
+
+			}
+			geometry Sphere	
+			{
+				radius 0.5
+			}
+		}
+	]
+}
+#mat
+Transform 
+{
+	translation	0.2 1.8 0.38
+	scale 1.5 0.5 1
+	children 
+	[		 DEF mat
+		Shape
+		{
+			appearance Appearance {
+				material Material {
+						ambientIntensity .0567
+					diffuseColor .62 .61 .52
+					specularColor .53 .56 .08
+					shininess .19
+					emissiveColor .18 .18 .15
+
+				}
+			}
+			geometry Sphere
+			{
+				radius 0.1
+			}
+		}
+	]
+}
+Transform
+{
+	translation	-0.2 1.8 0.38
+	scale 1.5 0.5 1
+	children [USE mat ]
+}
+#mui
+Transform
+{
+	translation	0 1.75 0.45
+	scale 0.5 1.5 0.5
+	children
+	[
+		Shape
+		{		  appearance Appearance	
+			{
+				material Material {
+						ambientIntensity .0567
+					diffuseColor .62 .61 .52
+					specularColor .53 .56 .08
+					shininess .19
+					emissiveColor .18 .18 .15
+
+				}
+
+			}
+		geometry Sphere
+		{
+			radius 0.1
+		}
+		}
+	]
+}
+#mom
+Transform 
+{
+	translation	0 1.6 0.3
+	 scale 1.5 0.5 1
+	children [
+	Shape 
+	{
+		appearance Appearance
+		{
+			material Material {
+					ambientIntensity .0567
+					diffuseColor .62 .61 .52
+					specularColor .53 .56 .08
+					shininess .19
+					emissiveColor .18 .18 .15
+			}
+
+		}
+	geometry Sphere 
+	{
+	radius 0.1
+	}}
+]
+}
+  #tai
+Transform
+{
+	translation	-0.45 1.8 0
+	scale 1 1 0.5
+	children
+	[
+		Shape
+		{
+			appearance Appearance
+			{
+				material Material {
+				ambientIntensity .0567
+					diffuseColor .62 .61 .52
+					specularColor .53 .56 .08
+					shininess .19
+					emissiveColor .18 .18 .15
+
+				}
+
+			}
+			geometry Sphere
+			{radius 0.1}
+		}
+	]
+}
+Transform
+{
+	translation	0.45 1.8 0
+	scale 1 1 0.5
+	children
+	[
+		Shape
+		{
+			appearance Appearance
+			{
+				material Material {
+				ambientIntensity .0567
+					diffuseColor .62 .61 .52
+					specularColor .53 .56 .08
+					shininess .19
+					emissiveColor .18 .18 .15
+
+				}
+
+			}
+			geometry Sphere
+			{radius 0.1}
+		}
+	]
+}

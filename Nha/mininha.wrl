@@ -1,0 +1,211 @@
+#VRML V2.0 utf8
+
+Transform {
+	children [
+		Transform {
+			rotation 1 0 0 -0.8
+			children [
+				Shape {
+
+                    appearance Appearance {
+				        	texture ImageTexture{
+								  url "Images/maubac.jpg"
+								  repeatS TRUE
+								  repeatT TRUE
+								  }
+			        }
+                    geometry IndexedFaceSet {
+
+                        coord Coordinate {
+
+                            point [-3 0 0,-1 4 0,1 4 0,3 0 0]
+
+                        }
+
+                        coordIndex [0 1 2 3 ]
+
+               
+                        colorIndex [1 1]
+
+                        colorPerVertex FALSE
+
+                        solid FALSE
+                
+
+                    }
+				}
+			]
+
+		}
+		Transform {
+			translation	0 0 -5.7
+			rotation 1 0 0 0.8
+			children [
+				Shape {
+
+                    appearance Appearance {
+				        	texture ImageTexture{
+								  url "Images/maubac.jpg"
+								  repeatS TRUE
+								  repeatT TRUE
+								  }
+			        }
+                    geometry IndexedFaceSet {
+
+                        coord Coordinate {
+
+                            point [-3 0 0,-1 4 0,1 4 0,3 0 0]
+
+                        }
+
+                        coordIndex [0 1 2 3 ]
+
+               
+                        colorIndex [1 1]
+
+                        colorPerVertex FALSE
+
+                        solid FALSE
+                
+
+                    }
+				}
+			]
+
+		}
+		#tamgiac
+		Transform {
+			rotation 0 0 1 -0.62
+			children [
+				Transform {
+			translation	-2.4 -1.7 -2.86
+			rotation  0 1 0 -1.57
+            children[
+                Shape {
+
+                    appearance Appearance {
+				        texture	ImageTexture {url "Images/maubac.jpg"}
+			        }
+                    geometry IndexedFaceSet {
+
+                        coord Coordinate {
+
+                            point [-2.78 0 0, 0 3.4 0, 2.78 0 0]
+
+                        }
+
+                        coordIndex [0 1 2 ]
+
+               
+                        colorIndex [1 1]
+
+                        colorPerVertex FALSE
+
+                        solid FALSE
+                
+
+                    }
+
+                }
+            ]
+        }
+			]
+		}
+		#tamgiac
+		Transform {
+			rotation 0 0 1 0.62
+			children [
+				Transform {
+			translation	2.4 -1.7 -2.86
+			rotation  0 1 0 -1.57
+            children[
+                Shape {
+
+                    appearance Appearance {
+				        texture	ImageTexture {url "Images/maubac.jpg"}
+			        }
+                    geometry IndexedFaceSet {
+
+                        coord Coordinate {
+
+                            point [-2.78 0 0, 0 3.4 0, 2.78 0 0]
+
+                        }
+
+                        coordIndex [0 1 2 ]
+
+               
+                        colorIndex [1 1]
+
+                        colorPerVertex FALSE
+
+                        solid FALSE
+                
+
+                    }
+
+                }
+            ]
+        }
+			]
+		}
+		#mininha
+		Transform {
+			translation	0 -1 -2.8
+			children [
+				Shape {
+					appearance Appearance {
+				        	texture ImageTexture{
+								  url "Images/maunha.jpg"
+								  repeatS TRUE
+								  repeatT TRUE
+								  }
+			        }
+					geometry Box {
+						size 5.7 2 5.7
+					}
+				}
+			]
+		}
+		#cuaso
+		Transform {
+			rotation 0 0 1 1.56
+			translation	-1.3 -1 0
+			 children [
+
+				Shape {
+					appearance Appearance {
+				        	texture ImageTexture{
+								  url "Images/cuaso.jpg"
+								  repeatS TRUE
+								  repeatT TRUE
+								  }
+			        }
+					geometry Box {
+						size 1 1 0.1
+					}
+				}
+			]
+		}
+		#cuaso
+		Transform {
+			rotation 0 0 1 1.56
+			translation	1.3 -1 0
+			 children [
+
+				Shape {
+					appearance Appearance {
+				        	texture ImageTexture{
+								  url "Images/cuaso.jpg"
+								  repeatS TRUE
+								  repeatT TRUE
+								  }
+			        }
+					geometry Box {
+						size 1 1 0.1
+					}
+				}
+			]
+		}
+	]
+}

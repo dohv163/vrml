@@ -1,0 +1,34 @@
+#VRML V2.0 utf8
+
+#tamgiac
+DEF tamgiac Transform {
+			rotation  0 1 0 -1.57
+            children[
+                Shape {
+
+                    appearance Appearance {
+				        texture	ImageTexture {url "Images/maubac.jpg"}
+			        }
+                    geometry IndexedFaceSet {
+
+                        coord Coordinate {
+
+                            point [-6.9 0 0, 0 8 0, 6.56 0 0]
+
+                        }
+
+                        coordIndex [0 1 2 ]
+
+               
+                        colorIndex [1 1]
+
+                        colorPerVertex FALSE
+
+                        solid FALSE
+                
+
+                    }
+
+                }
+            ]
+        }

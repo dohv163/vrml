@@ -1,0 +1,61 @@
+#VRML V2.0 utf8
+
+Transform
+{
+	children 
+	[
+		Inline
+		{
+			url "oto.wrl"
+		}
+	]
+}
+Transform
+{
+	translation	-7 1.5 -1
+	children [
+DEF	hop
+Transform	{
+	scale 0.5 0.5 0.5
+	
+	children 
+	[
+		Inline 
+		{
+			url	"hop.wrl"
+		}
+	]
+}
+]
+}
+Transform
+{
+	translation	-7 1.5 -2.5
+	children
+	[USE hop ]
+}
+ Transform
+{
+	translation	-7 1.5 -4
+	children
+	[USE hop ]
+}
+
+Transform
+{
+	translation	-9.5 1.5 -2.5
+	children
+	[USE hop ]
+}
+ Transform
+{
+	translation	-9.5 1.5 -4
+	children
+	[USE hop ]
+}
+ Transform
+{
+	translation	-9.5 1.5 -1
+	children
+	[USE hop ]
+}

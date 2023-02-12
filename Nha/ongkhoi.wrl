@@ -1,0 +1,15 @@
+#VRML V2.0 utf8
+
+Transform {
+	children [
+		Shape {
+			geometry Cylinder {
+				bottom TRUE
+				height 7
+				radius 0.4
+				side TRUE
+				top	TRUE
+			}
+		}
+	]
+}

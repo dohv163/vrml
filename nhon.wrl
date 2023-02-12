@@ -1,0 +1,381 @@
+#VRML V2.0 utf8
+
+
+Transform {		  # duong
+	translation	-4 0 0
+	children[
+	Shape {
+	appearance Appearance {texture ImageTexture	{url "DuongXeChay/anhdep/nenduong.png"}}
+	geometry Box {size 120 0.2 30}
+	}
+	Transform {
+		translation	-50 1 0
+		children [
+			Inline {
+			url	"duongtrencao.wrl"
+			}
+		]
+	}
+	]
+}
+# vach ke duong 1
+Transform {
+	scale 5 5 5
+	 translation -50 0.3 -8
+	 children [
+		 Inline	{
+			url	"vachkeduong.wrl"
+		 }
+	 ]
+
+}
+# vach ke duong 2
+Transform {
+	scale 5 5 5
+	 translation -50 0.3 8
+	 children [
+		 Inline	{
+			url	"vachkeduong.wrl"
+		 }
+	 ]
+
+}
+NavigationInfo {
+    avatarSize [0.25, 1.6, 0.75]
+    headlight TRUE
+    speed 8
+    type ["WALK", "ANY"]
+}
+
+# via he 1
+Transform {
+	scale 1.5 0.2 5
+	translation	-20 0.5 13
+	children [Inline {url "DuongXeChay/viahe.wrl"}
+	]
+}
+# via he 2
+Transform {
+	scale 1.5 0.2 5
+	translation	-20 0.5 -38
+	children [Inline {url "DuongXeChay/viahe.wrl"}
+	]
+}
+
+# hang cay ben trai  
+
+Transform {	
+	translation	-60 5.5 20
+	scale  2 2 2
+	children [Inline {url "DuongXeChay/caytrenhe.wrl"}
+	]
+}
+Transform {	
+	translation	-50 6.5 20
+	scale  2 2 2
+	children [Inline {url "cotden.wrl"}
+	]
+}
+Transform {	
+	translation	-40 5.5 20
+	scale  2 2 2
+	children [Inline {url "DuongXeChay/caytrenhe.wrl"}
+	]
+}
+Transform {	
+	translation	-30 6.5 20
+	scale  2 2 2
+	children [Inline {url "cotden.wrl"}
+	]
+}
+Transform {	
+	translation	-20 5.5 20
+	scale  2 2 2
+	children [Inline {url "DuongXeChay/caytrenhe.wrl"}
+	]
+}
+Transform {	
+	translation	-10 6.5 20
+	scale  2 2 2
+	children [Inline {url "cotden.wrl"}
+	]
+}
+
+Transform {	
+	translation	0 5.5 20
+	scale  2 2 2
+	children [Inline {url "DuongXeChay/caytrenhe.wrl"}
+	]
+}
+Transform {	
+	translation	10 6.5 20
+	scale  2 2 2
+	children [Inline {url "cotden.wrl"}
+	]
+}
+Transform {	
+	translation	20 5.5 20
+	scale  2 2 2
+	children [Inline {url "DuongXeChay/caytrenhe.wrl"}
+	]
+}
+Transform {	
+	translation	30 6.5 20
+	scale  2 2 2
+	children [Inline {url "cotden.wrl"}
+	]
+}
+Transform {	
+	translation	40 5.5 20
+	scale  2 2 2
+	children [Inline {url "DuongXeChay/caytrenhe.wrl"}
+	]
+}
+
+Transform {	
+	translation	50 6.5 20
+	scale  2 2 2
+	children [Inline {url "cotden.wrl"}
+	]
+}
+# hang cay ben phai  
+
+Transform {	
+	translation	-60 5.5 -30
+	scale  2 2 2
+	children [Inline {url "DuongXeChay/caytrenhe.wrl"}
+	]
+}
+Transform {	
+	translation	-50 6.5 -30
+	scale  2 2 2
+	children [Inline {url "cotden.wrl"}
+	]
+}
+
+Transform {	
+	translation	-40 5.5 -30
+	scale  2 2 2
+	children [Inline {url "DuongXeChay/caytrenhe.wrl"}
+	]
+}
+Transform {	
+	translation	-30 6.5 -30
+	scale  2 2 2
+	children [Inline {url "cotden.wrl"}
+	]
+}
+Transform {	
+	translation	-20 5.5 -30
+	scale  2 2 2
+	children [Inline {url "DuongXeChay/caytrenhe.wrl"}
+	]
+}
+Transform {	
+	translation	0 5.5 -30
+	scale  2 2 2
+	children [Inline {url "DuongXeChay/caytrenhe.wrl"}
+	]
+}
+Transform {	
+	translation	10 6.5 -30
+	scale  2 2 2
+	children [Inline {url "cotden.wrl"}
+	]
+}
+Transform {	
+	translation	20 5.5 -30
+	scale  2 2 2
+	children [Inline {url "DuongXeChay/caytrenhe.wrl"}
+	]
+}
+Transform {	
+	translation	30 6.5 -30
+	scale  2 2 2
+	children [Inline {url "cotden.wrl"}
+	]
+}
+Transform {	
+	translation	40 5.5 -30
+	scale  2 2 2
+	children [Inline {url "DuongXeChay/caytrenhe.wrl"}
+	]
+}
+Transform {	
+	translation	50 6.5 -30
+	scale  2 2 2
+	children [Inline {url "cotden.wrl"}
+	]
+}
+# mot day nha
+
+#the gioi di dong
+Transform {
+
+    translation -42 2 -30
+	scale 0.6 0.6 0.6
+    children [
+        Inline {
+            url "kfc/mainkfc.wrl"
+        }
+    ]
+}
+#cafe
+Transform {
+  
+    translation -5 5 -25
+	scale 0.5 0.5 0.5
+    children [
+        Inline {
+            url "cafe/maincafe.wrl"
+        }
+    ]
+}
+
+#quan an
+Transform {
+    translation 20 2 -27.5
+    children [
+        Inline {
+            url "nha/mainnha1.wrl"
+        }
+    ]
+}
+# nha tang
+  Transform {
+
+    translation 70 10 -36
+	rotation  0 1 0 1.57
+    children [
+        Inline {
+            url "nhacaotang/main.wrl"
+        }
+    ]
+}
+
+
+
+# mot day nha 
+Transform {
+
+    translation -80 10 36
+	rotation  0 1 0 -1.57
+    children [
+        Inline {
+            url "nhacaotang/main.wrl"
+        }
+    ]
+}
+Transform {
+
+    translation -65 10 36
+	rotation  0 1 0 -1.57
+    children [
+        Inline {
+            url "nhacaotang/main.wrl"
+        }
+    ]
+}
+
+Transform {
+
+    translation -50 10 36
+	rotation  0 1 0 -1.57
+    children [
+        Inline {
+            url "nhacaotang/main.wrl"
+        }
+    ]
+}
+
+Transform {
+
+    translation -35 10 36
+	rotation  0 1 0 -1.57
+    children [
+        Inline {
+            url "nhacaotang/main.wrl"
+        }
+    ]
+}
+
+Transform {
+
+    translation -15 10 36
+	rotation  0 1 0 -1.57
+    children [
+        Inline {
+            url "nhacaotang/main.wrl"
+        }
+    ]
+}
+ Transform {
+
+    translation 22 10 36
+	rotation  0 1 0 -1.57
+    children [
+        Inline {
+            url "nhacaotang/main.wrl"
+        }
+    ]
+}
+
+
+
+
+DEF view Viewpoint {
+    position 0 0 -300
+    orientation 0 1 0 3.14
+}
+DEF time TimeSensor {
+    loop TRUE
+    enabled FALSE
+    cycleInterval  2
+}
+DEF tinhtien PositionInterpolator {
+    key [0,0.5,1]
+    keyValue [0 0 100,0 0 30]
+}
+ROUTE time.fraction_changed TO tinhtien.set_fraction
+ROUTE tinhtien.value_changed TO view.position
+
+
+# xe chay tren duong
+
+Transform {
+	translation 0 0.5 -7
+	scale 1.5 1.5 1.5
+	rotation 0 1 0 3.14
+	children [Inline {url "DuongXeChay/xetaichay.wrl"}
+	
+	]}
+
+Transform {
+	translation 0 0.5 7
+	scale 1.5 1.5 1.5
+	children [Inline {url "DuongXeChay/xetaichay.wrl"}]
+}
+
+Viewpoint {
+    fieldOfView 1
+    jump TRUE
+    description "v1"
+    orientation 1 0 0 -1
+    position 0 200 100
+}
+Viewpoint {
+    fieldOfView 0.5
+    jump TRUE
+    description "v2"
+    orientation 0 1 0 3.14
+    position 0 0 220
+}
+Viewpoint {
+    fieldOfView 0.5
+    jump TRUE
+    description "v2"
+    orientation 0 1 0 3.14
+    position 0 0 350
+}
+
+

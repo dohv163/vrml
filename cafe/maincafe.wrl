@@ -1,0 +1,854 @@
+#VRML V2.0 utf8
+
+Transform {
+	translation	0 -10 -40
+	children [
+		#nen nha
+		Transform {
+			children [
+				Shape {
+					appearance Appearance {material Material {}
+						texture	ImageTexture {
+							url	"Images/nenden.jpg"
+						}
+					}
+					geometry Box {
+						size 35 1 40
+					}
+				}
+			]
+		}
+		#nen nha
+		Transform {
+			translation	0 1 -1.5
+			children [
+				Shape {
+					appearance Appearance {material Material {}
+						texture	ImageTexture {
+							url	"Images/nenden.jpg"
+						}	
+					}
+					geometry Box {
+						size 35 1 37
+					}
+				}
+			]
+		}
+		#cot nha
+		Transform {
+			translation	0 12.5 16
+			children [
+				Shape {
+					appearance Appearance {material Material {}
+						texture	ImageTexture {
+							url	"Images/nenden.jpg"
+						}	
+					}
+					geometry Box {
+						size 3 22 1
+					}
+				}
+			]
+		}
+		#mat tuong
+		Transform {
+			translation	-17.5 12.5 -5.5
+			children [
+				Shape {
+					appearance Appearance {material Material {}
+						texture	ImageTexture {
+							url	"Images/nenden.jpg"
+						}	
+					}
+					geometry Box {
+						size 0.1 22 28.8
+					}
+				}
+			]
+		}
+			Transform {
+			translation	-17.4 12.5 -5.5
+			children [
+				Shape {
+					appearance Appearance {material Material {}
+						texture	ImageTexture {
+							url	"Images/nennau.jpg"
+						}	
+					}
+					geometry Box {
+						size 0.01 22 28.8
+					}
+				}
+			]
+		}
+			#mat tuong
+		Transform {
+			translation	17.5 12.5 -5.2
+			children [
+				Shape {
+					appearance Appearance {material Material {}
+						texture	ImageTexture {
+							url	"Images/nenden.jpg"
+						}	
+					}
+					geometry Box {
+						size 0.1 22 29.5
+					}
+				}
+			]
+		}
+		Transform {
+			translation	17.4 12.5 -5.5
+			children [
+				Shape {
+					appearance Appearance {material Material {}
+						texture	ImageTexture {
+							url	"Images/nennau.jpg"
+						}	
+					}
+					geometry Box {
+						size 0.01 22 28.8
+					}
+				}
+			]
+		}
+		#mat nen
+		Transform {
+			translation	0 1.5 -1.5
+			children [
+				Shape {
+					appearance Appearance {
+						texture	ImageTexture {
+							url	"Images/c3288.jpg"
+						}
+					
+					}
+					geometry Box {
+						size 35 0.1 37
+					}
+				}
+			]
+		}
+		#cot nhat
+		Transform {
+			children [
+					Transform {
+			translation	0 13 0
+			children [
+				Shape {
+					appearance Appearance {material Material {}
+						texture	ImageTexture {
+							url	"Images/nennau.jpg"
+						}	
+					}
+					geometry Box {
+						size 2 21 2
+					}
+				}
+			]
+		}
+			Transform {
+			translation	0 2 0
+			children [
+				Shape {
+					appearance Appearance {material Material {}
+						texture	ImageTexture {
+							url	"Images/nennau.jpg"
+						}	
+					}
+					geometry Box {
+						size 3 3 3
+					}
+				}
+			]
+		}
+			]
+		}
+		#mat sau nha
+		Transform {
+			translation	0 12.5 -19.95
+			children [
+				Shape {
+					appearance Appearance {material Material {}
+						texture	ImageTexture {
+							url	"Images/nenden.jpg"
+						}
+					}
+					geometry Box {
+						size 35 22 0.01
+					}
+				}
+			]
+		}
+			Transform {
+			translation	0 12.5 -19.93
+			children [
+				Shape {
+					appearance Appearance {material Material {}
+						texture	ImageTexture {
+							url	"Images/nennau.jpg"
+						}
+					}
+					geometry Box {
+						size 35 22 0.01
+					}
+				}
+			]
+		}
+		#tamkinh
+		Transform {
+			translation	9.3 12.5 12.8
+			rotation 0 1 0 0.4
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {transparency 0.7}
+					
+					}
+					geometry Box {
+						size 17.6 22 0.05
+					}
+				}
+			]
+		}
+			#tamkinh
+		Transform {
+			translation	-6.37 12.5 13.56
+			rotation 0 1 0 -0.4
+			scale 7.5 11 0.05
+			children [
+				Inline {
+				   url "cuakinh.wrl"
+				}
+			]			
+		}
+			#tamkinh
+		Transform {
+			translation	-14.8 12.5 10
+			rotation 0 1 0 -0.4
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {transparency 0.7}
+					
+					}
+					geometry Box {
+						size 5.6 22 0.05
+					}
+				}
+			]								   
+		}
+			#tamkinh
+		Transform {
+			translation	-3 12.5 15
+			rotation 0 1 0 -0.4
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {transparency 0.7}
+					
+					}															  
+					geometry Box {
+						size 5 22 0.05
+					}
+				}
+			]
+		}
+		#mainha
+		Transform {
+			translation	0 23.6 10
+			rotation 1 0 0 1.58
+			children [
+				Inline {
+				   url "mainha.wrl"
+				}
+			]
+		}
+		#mainha
+			Transform {
+			translation	0 23.6 -5
+			children [
+				Shape {
+					appearance Appearance {material Material {}
+						texture	ImageTexture {
+							url	"Images/nensang.jpg"
+						}						
+					}
+					geometry Box {
+						size 35 0.01 30
+					}
+				}
+			]
+		}
+		#bien quang cao
+		Transform {
+			children [
+					Transform {
+			translation	-9 25.6 13
+			rotation 0 1 0 -0.4
+			scale 1.6 1 1
+			children [
+				Inline {
+					url	"bienquangcao.wrl"
+				}
+			]
+		}
+		Transform {
+			translation	-6 25.2 12.4
+			rotation 1 0 0 1
+			children [
+				Shape {
+					appearance Appearance {material Material {}}
+					geometry Cylinder {
+						height 4
+						radius 0.3
+					}
+				}
+			]
+		}
+			Transform {
+			translation	-11 25.2 10.3
+			rotation 1 0 0 1
+			children [
+				Shape {
+					appearance Appearance {material Material {}}
+					geometry Cylinder {
+						height 4
+						radius 0.3
+					}
+				}
+			]
+		}
+			]
+		}
+		#ban tinh tien
+		Transform {
+			translation	-10.8 4.6 -13
+			scale 1.5 2 1.5
+			children [
+				Inline {
+					url	"bantinhtien.wrl"
+				}
+			]
+		}
+		#may tinh
+			Transform {
+			translation	-10.8 11 -22
+			rotation 0 1 0 -3.2
+			scale 1 0.7 1
+			children [
+				Inline {
+					url	"maytinh.wrl"
+				}
+			]
+		}
+		DEF banghe Transform {
+			children [
+					#ghe
+	   	Transform {
+			translation	13 2 0
+			scale 1 1.4 1
+			children [
+				Inline {
+					url	"ghe.wrl"								 
+				}
+			]
+		}
+		#ban
+		Transform {
+			translation	13 4.5 3
+			scale 1.2 1.6 1.6
+			children [
+				Inline {
+					url	"ban.wrl"
+				}
+			]
+		}
+		#ghe
+	   	Transform {
+			translation	13 2 6.5
+			scale 1 1.4 1
+			rotation 0 1 0 3.2
+			children [
+				Inline {
+					url	"ghe.wrl"								 
+				}
+			]
+		}
+			]
+		}
+		DEF banghe1 Transform {
+			translation	0 0 -12
+			children [
+					#ghe
+	   	Transform {
+			translation	13 2 0
+			scale 1 1.4 1
+			children [
+				Inline {
+					url	"ghe.wrl"								 
+				}
+			]
+		}
+		#ban
+		Transform {
+			translation	13 4.5 3
+			scale 1.2 1.6 1.6
+			children [
+				Inline {
+					url	"ban.wrl"
+				}
+			]
+		}
+		#ghe
+	   	Transform {
+			translation	13 2 6.5
+			scale 1 1.4 1
+			rotation 0 1 0 3.2
+			children [
+				Inline {
+					url	"ghe.wrl"								 
+				}
+			]
+		}
+			]
+		}
+			DEF banghe2 Transform {
+			translation	-27 0 0
+			children [
+					#ghe
+	   	Transform {
+			translation	13 2 0
+			scale 1 1.4 1
+			children [
+				Inline {
+					url	"ghe1.wrl"								 
+				}
+			]
+		}
+		#ban
+		Transform {
+			translation	13 4.5 3
+			scale 1.2 1.6 1.6
+			children [
+				Inline {
+					url	"ban.wrl"
+				}
+			]
+		}
+		#ghe
+	   	Transform {
+			translation	13 2 6.5
+			scale 1 1.4 1
+			rotation 0 1 0 3.2
+			children [
+				Inline {
+					url	"ghe1.wrl"								 
+				}
+			]
+		}
+			]
+		}
+			DEF banghe3 Transform {
+			translation	-27 0 -10
+			children [
+					#ghe
+	   	Transform {
+			translation	13 2 0
+			scale 1 1.4 1
+			children [
+				Inline {
+					url	"ghe1.wrl"								 
+				}
+			]
+		}
+		#ban
+		Transform {
+			translation	13 4.5 3
+			scale 1.2 1.6 1.6
+			children [
+				Inline {
+					url	"ban.wrl"
+				}
+			]
+		}
+		#ghe
+	   	Transform {
+			translation	13 2 6.5
+			scale 1 1.4 1
+			rotation 0 1 0 3.2
+			children [
+				Inline {
+					url	"ghe1.wrl"								 
+				}
+			]
+		}
+			]
+		}
+		#tranh
+		Transform {
+			translation	17.3 13 -10
+			scale 2 2 2
+			rotation 0 1 0 -1.6
+			children [
+				Inline {
+					url	"tranh.wrl"
+				}
+			]
+		}
+		#tranh
+		Transform {
+			translation	17.3 13 0
+			scale 2 2 2
+			rotation 0 1 0 -1.6
+			children [
+				Inline {
+					url	"tranh1.wrl"
+				}
+			]
+		}
+		#chau cay
+		Transform {
+			translation	12 1.5 9.6
+			scale 6.2 6.2 6.2
+			children [
+				Inline {
+					url	"chaucay.wrl"
+				}
+			]
+		}
+		Transform {
+			translation	12 1.5 -18
+			scale 7 7 7
+			children [
+				Inline {
+					url	"chaucay.wrl"
+				}
+			]
+		}
+		Transform {
+			translation	6 1.5 -18
+			scale 7 7 7
+			children [
+				Inline {
+					url	"chaucay.wrl"
+				}
+			]
+		}
+		#tivi
+		Transform {
+			translation	0 12 -19.5
+			scale 4 2 3
+			children [
+				Inline {
+					url	"tivi.wrl"
+				}
+			]
+		}
+		#coc nuoc
+		Transform {
+			children [
+				Transform {
+					translation	 12 4.7 2
+					scale 8 8 8
+					children [
+						Inline {
+							url "coc.wrl"
+						}
+					]
+				}
+				Transform {
+					translation	 12 4.7 4
+					scale 8 8 8
+					children [
+						Inline {
+							url "coc.wrl"
+						}
+					]
+				}
+				Transform {
+					translation	 14 4.7 2
+					scale 8 8 8
+					children [
+						Inline {
+							url "coc.wrl"
+						}
+					]
+				}
+				Transform {
+					translation	 14 4.7 4
+					scale 8 8 8
+					children [
+						Inline {
+							url "coc.wrl"
+						}
+					]
+				}
+			]
+		}
+			#coc nuoc
+		Transform {
+			translation	0 0 -12
+			children [
+				Transform {
+					translation	 12 4.7 2
+					scale 8 8 8
+					children [
+						Inline {
+							url "coc.wrl"
+						}
+					]
+				}
+				Transform {
+					translation	 12 4.7 4
+					scale 8 8 8
+					children [
+						Inline {
+							url "coc.wrl"
+						}
+					]
+				}
+				Transform {
+					translation	 14 4.7 2
+					scale 8 8 8
+					children [
+						Inline {
+							url "coc.wrl"
+						}
+					]
+				}
+				Transform {
+					translation	 14 4.7 4
+					scale 8 8 8
+					children [
+						Inline {
+							url "coc.wrl"
+						}
+					]
+				}
+			]
+		}
+			#coc nuoc
+		Transform {
+			translation	-27 0 0
+			children [
+				Transform {
+					translation	 12 4.7 2
+					scale 8 8 8
+					children [
+						Inline {
+							url "coc.wrl"
+						}
+					]
+				}
+				Transform {
+					translation	 12 4.7 4
+					scale 8 8 8
+					children [
+						Inline {
+							url "coc.wrl"
+						}
+					]
+				}
+				Transform {
+					translation	 14 4.7 2
+					scale 8 8 8
+					children [
+						Inline {
+							url "coc.wrl"
+						}
+					]
+				}
+				Transform {
+					translation	 14 4.7 4
+					scale 8 8 8
+					children [
+						Inline {
+							url "coc.wrl"
+						}
+					]
+				}
+			]
+		}
+				#coc nuoc
+		Transform {
+			translation	-27 0 -10
+			children [
+				Transform {
+					translation	 12 4.7 2
+					scale 8 8 8
+					children [
+						Inline {
+							url "coc.wrl"
+						}
+					]
+				}
+				Transform {
+					translation	 12 4.7 4
+					scale 8 8 8
+					children [
+						Inline {
+							url "coc.wrl"
+						}
+					]
+				}
+				Transform {
+					translation	 14 4.7 2
+					scale 8 8 8
+					children [
+						Inline {
+							url "coc.wrl"
+						}
+					]
+				}
+				Transform {
+
+
+
+
+					translation	 14 4.7 4
+					scale 8 8 8
+					children [
+						Inline {
+							url "coc.wrl"
+						}
+					]
+				}
+			]
+		}
+		#bong den
+		Transform {
+			children [
+				Transform {
+			translation	16.8 19 -10
+			scale 3 3 3
+			rotation 0 1 0 -2
+			children [
+				Inline {
+					url	"den.wrl"
+				}
+			]
+		}
+			Transform {
+			translation	16.8 19 0
+			scale 3 3 3
+			rotation 0 1 0 -2
+			children [
+				Inline {
+					url	"den.wrl"
+				}
+			]
+		}
+			]
+		}
+		#bong den
+		Transform {
+			translation	-33.6 0 0
+			children [
+				Transform {
+			translation	16.8 19 -10
+			scale 3 3 3
+			rotation 0 1 0 1.2
+			children [
+				Inline {
+					url	"den.wrl"
+				}
+			]
+		}
+			Transform {
+			translation	16.8 19 0
+			scale 3 3 3
+			rotation 0 1 0 1.2
+			children [
+				Inline {
+					url	"den.wrl"
+				}
+			]
+		}
+			]
+		}
+		#nguoi
+		Transform {
+			translation	-9 6.8 -16
+			children [
+				Inline {
+					url	"nguoi.wrl"
+				}
+			]
+		}
+		#nguoi ngoi
+		Transform {
+			children [
+				Transform {
+			translation	-13.5 4.6 1
+			scale 0.9 0.85 0.9
+			children [
+				Inline {
+					url	"nguoingoi1.wrl"
+				}
+			]
+		}
+			Transform {
+			translation	-13.5 4.6 6
+			scale 0.9 0.85 0.9
+			rotation 0 1 0 -3
+			children [
+				Inline {
+					url	"nguoingoi.wrl"
+				}
+			]
+		}
+			]
+		}
+		#nguoi ngoi
+		Transform {
+			translation	26 0 0
+			children [
+				Transform {
+			translation	-13.5 4.6 1
+			scale 0.9 0.85 0.9
+			children [
+				Inline {
+					url	"nguoingoi1.wrl"
+				}
+			]
+		}
+			Transform {
+			translation	-13.5 4.6 6
+			scale 0.9 0.85 0.9
+			rotation 0 1 0 -3
+			children [
+				Inline {
+					url	"nguoingoi2.wrl"
+				}
+			]
+		}
+			]
+		}
+			#nguoi ngoi
+		Transform {
+			translation	26 0 -13
+			children [
+				Transform {
+			translation	-13.5 4.6 1
+			scale 0.9 0.85 0.9
+			children [
+				Inline {
+					url	"nguoingoi.wrl"
+				}
+			]
+		}
+			Transform {
+			translation	-13.5 4.6 6
+			scale 0.9 0.85 0.9
+			rotation 0 1 0 -3
+			children [
+				Inline {
+					url	"nguoingoi2.wrl"
+				}
+			]
+		}
+			]
+		}
+	]
+}

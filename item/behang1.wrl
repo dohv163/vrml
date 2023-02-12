@@ -1,0 +1,102 @@
+#VRML V2.0 utf8
+
+ DEF nguoi1
+
+Transform 
+{
+	
+
+	children
+	[		 
+		Inline
+		{
+			url	"nguoicd1.wrl"
+		}
+		DEF DoorSense ProximitySensor {
+
+        center -10  10  0
+
+        size 10000 10000 10000	}
+	]
+	
+
+}
+
+DEF tou TouchSensor {enabled TRUE }
+DEF t TimeSensor 
+{
+	enabled	TRUE
+	cycleInterval 20
+	loop TRUE
+	startTime 0.0
+	stopTime 1.0
+}
+
+DEF	p PositionInterpolator
+{
+	key	[0 0.1 0.2 0.3 0.5]
+	keyValue [0 0 0,0 0 4,0 0 8,-3 0 11,-6 0 11]
+}
+  DEF oi OrientationInterpolator
+  {
+	  key [0 0.1 0.2 0.3 0.5]
+	  keyValue [0 1 0 -1.57,0 1 0 -1.57,0 1 0 -1.57,0 1 0 3.14,0 1 0 3.14]
+  }																																
+
+ROUTE DoorSense.isActive TO	t.enabled
+ROUTE DoorSense.enterTime TO t.startTime
+ROUTE t.fraction_changed TO	p.set_fraction
+ROUTE p.value_changed TO nguoi1.translation
+ROUTE t.fraction_changed TO	oi.set_fraction
+ROUTE oi.value_changed TO nguoi1.rotation
+
+  Transform {
+	translation 2.5 1 0
+	children [
+DEF hop
+Transform
+{
+	
+	children
+	[  
+		Inline
+		{
+			url "hang\hopCam.wrl"
+		}
+			DEF DoorSense1 ProximitySensor {
+
+        center -10  10  0
+
+        size 10000 10000 10000	}
+	]																						 
+	
+}
+]}
+DEF t1 TimeSensor 
+{
+	enabled	TRUE
+	cycleInterval 20
+	loop TRUE
+	startTime 0.0
+	stopTime 1.0
+}
+DEF	p1 PositionInterpolator
+{
+	key	[0 0.1 0.2 0.3 0.5]
+	keyValue [-2.5 0 0,-2.5 0 6,-2.5 0 11,-8 0 11,-11 0 11]
+}
+  DEF oi1 OrientationInterpolator
+  {
+	  key [0 0.1 0.2 0.3 0.5]
+	  keyValue [0 1 0 -1.57,0 1 0 -1.57,0 1 0 -1.57,0 1 0 3.14,0 1 0 3.14]
+  }	
+
+DEF	tou1 TouchSensor {enabled TRUE }
+
+
+ROUTE DoorSense1.isActive TO	t1.enabled
+ROUTE DoorSense1.enterTime TO t1.startTime
+ROUTE t1.fraction_changed TO	p1.set_fraction 
+ROUTE p1.value_changed TO hop.set_translation
+ROUTE t1.fraction_changed TO oi1.set_fraction
+ROUTE oi1.value_changed TO hop.rotation

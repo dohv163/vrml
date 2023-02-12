@@ -1,0 +1,839 @@
+#VRML V2.0 utf8
+#Nền 
+Transform {
+    translation 0 250 0
+
+    children [
+        Inline {
+            url "item\background.wrl"
+        }
+    ]
+}
+DirectionalLight {
+	on TRUE
+	intensity 1
+	ambientIntensity 0.2
+	color 1 1 1
+	direction 100 15 200
+}
+NavigationInfo {
+	avatarSize [0 100 1]
+	speed 10
+}
+Transform {  
+	children [
+        #nen dat
+		Transform {
+            scale 200 1 200 
+            translation 0 -20 0
+            children 
+			[
+		         Shape
+				 {
+					 appearance	Appearance 
+					 {
+						 texture ImageTexture
+						 {
+							 url "item\anh\maunendep.png"
+						 }
+					 }
+					 geometry Box
+					 {		
+						
+						 size 5.3 1 5
+					 }
+				 }
+			]
+        }
+      
+    ]}
+	Transform 
+	{
+		translation	160 -2 -250
+		scale 3.2 2.2 3.2
+		rotation 0 1 0 -1.57
+		children 
+		[
+			Inline
+			{
+				url	"item\di.wrl"
+			}
+		]
+	}
+		Transform 
+	{
+		translation	300 -2 -280
+		scale 3.2 2.2 3.2
+		rotation 0 1 0 -3.
+		children 
+		[
+			Inline
+			{
+				url	"item\di2.wrl"
+			}
+		]
+	}
+Transform 
+	{
+		translation	160 -2 -250
+		scale 3.2 2.2 3.2
+		rotation 0 1 0 -3.14
+		children 
+		[
+			Inline
+			{
+				url	"item\di.wrl"
+			}
+		]
+	}
+# bên trái
+Transform
+	{
+		translation	400 -255 100
+		scale 40 20 15
+		rotation 0 1 0 -1.54
+		children
+		[
+			Inline
+			{
+				url	"item\sapbanhang.wrl"
+			}
+		]
+	}
+Transform
+	{
+		translation	80 -20 0
+		children	[  DEF o
+	Transform
+			{
+				scale 0.5 0.5 0.5
+				rotation 1 0 0 -1.57
+				children [
+			Inline
+			{
+				
+				url	"item\o.wrl"
+			}
+				]
+			}
+		]
+
+	}
+	Transform
+	{
+		translation	80 -20 60
+		children [USE o]
+	}
+	 Transform
+	{
+		translation	80 -20 120
+		children [USE o]
+	}
+	Transform
+	{
+		translation	80 -20 180
+		children [USE o]
+	}
+		Transform
+	{
+		translation	80 -20 -100
+		children [USE o]
+	}
+	Transform
+	{
+		translation	370 -3.5 100
+		children 
+		[
+			Inline
+			{
+				url	"item\hang\khế.wrl"
+			}
+		]
+	}
+Transform
+	{
+		translation	328 -8.5 -40
+		rotation 0 1 0 -3.14
+		children 
+		[
+			Inline
+			{
+				url	"item\hang\khaybuoi.wrl"
+			}
+		]
+	}
+Transform
+	{
+		translation	328 2 40
+		rotation 0 1 0 -3.14
+		scale 7	7 7
+		children 
+		[
+			Inline
+			{
+				url	"item\hang\khayle.wrl"
+			}
+		]
+	}
+Transform
+	{
+		translation	328 -5 100
+		rotation 0 1 0 -3.14
+		scale 7	7 7
+		children 
+		[
+			Inline
+			{
+				url	"item\hang\hopxoai.wrl"
+			}
+		]	}
+Transform 
+	{
+	   translation 300 2 -15
+		rotation 0 1 0 -1.57
+		scale 7 7 7
+		children 
+		[
+			Inline
+			{
+				url	"item\hang\khaycam.wrl"
+			}
+		]
+	}
+	#dạp bán dứa
+	Transform 
+	{
+	   translation 300 -5 30
+		rotation 0 1 0 -1.57
+		scale 7 7 7
+		children 
+		[
+			Inline
+			{
+				url	"item\hang\khaydua.wrl"
+			}
+		]
+	}
+	Transform 
+	{
+	   translation 300 9.5 90
+		rotation 0 1 0 -1.57
+		scale 7 7 7
+		children 
+		[
+			Inline
+			{
+				url	"item\hang\khaytao.wrl"
+			}
+		]
+	}
+	Transform 
+	{
+	   translation 300 -5 60
+		rotation 0 1 0 -1.57
+		scale 7 7 7
+		children 
+		[
+			Inline
+			{
+				url	"item\hang\khayxoai.wrl"
+			}
+		]
+	}
+	#Khay bưởi bên trái
+	Transform 
+	{
+	   translation 300 -10 120
+		rotation 0 1 0 -1.57
+		scale 0.75 0.75 0.75
+		children 
+		[
+			Inline
+			{
+				url	"item\hang\khaybuoi.wrl"
+			}
+		]
+	}
+	Transform 
+	{
+	   translation 300 3 150
+		rotation 0 1 0 -1.57
+		scale 7 7 7
+		children 
+		[
+			Inline
+			{
+				url	"item\hang\khaycam.wrl"
+			}
+		]
+	}
+	Transform 
+	{
+	   translation 300 10 180
+		rotation 0 1 0 -1.57
+		scale 7 7 7
+		children 
+		[
+			Inline
+			{
+				url	"item\hang\khaytao.wrl"
+			}
+		]
+	}
+	#nguoi ngoi ben trai
+	Transform
+	{
+		rotation 0 1 0 -1.57
+		scale 4.5 4.5 4.5
+		translation	 320 -5 -15
+		children 
+		[
+			Inline
+			{
+				url	"item\nguoingoi2.wrl"
+			}
+		]
+	}
+	Transform
+	{
+		rotation 0 1 0 -1.57
+		scale 4.5 4.5 4.5
+		translation	 320 -5 70
+		children 
+		[
+			Inline
+			{
+				url	"item\nguoingoi2.wrl"
+			}
+		]
+	}
+	Transform
+	{
+		rotation 0 1 0 -1.57
+		scale 4.5 4.5 4.5
+		translation	 320 -5 150
+		children 
+		[
+			Inline
+			{
+				url	"item\nguoingoi2.wrl"
+			}
+		]
+	}
+	#người bê hàng
+	Transform
+	{
+		rotation 0 1 0 -1.57
+		scale 4.5 4.5 4.5
+		translation	 330 2 225
+		children 
+		[
+			Inline
+			{
+				url	"item\behang.wrl"
+			}
+		]
+	}
+		Transform
+	{
+		rotation 0 1 0 3.14
+		scale 4.5 4.5 4.5
+		translation	 128 3 385
+		children 
+		[
+			Inline
+			{
+				url	"item\behang1.wrl"
+			}
+		]
+	}
+	# bên phải
+	Transform
+	{
+		translation	0 -255 100
+		scale 40 20 15
+		rotation 0 1 0 1.54
+		children
+		[
+			Inline
+			{
+				url	"item\sapbanhang.wrl"
+			}
+		]
+	}
+	Transform
+	{
+		translation	330 -20 180
+		children [USE o]
+	}
+	Transform
+	{
+		translation	330 -20 120
+		children [USE o]
+	}
+	Transform
+	{
+		translation	330 -20 60
+		children [USE o]
+	}
+	Transform
+	{
+		translation	330 -20 0
+		children [USE o]
+	}
+	Transform
+	{
+		translation 130 -8 -10
+		children 
+		[
+			Inline
+			{														
+				url	"item\hang\dưa hấu.wrl"
+			}
+		]
+	}
+		Transform
+	{
+		translation 120 -8 -70
+		children 
+		[
+			Inline
+			{														
+				url	"item\hang\khaybuoi.wrl"
+			}
+		]
+	}
+			Transform
+	{
+		translation 120 8.5 -100
+		scale 7 7 7
+		children 
+		[
+			Inline
+			{														
+				url	"item\hang\khayTao.wrl"
+			}
+		]
+	}
+				Transform
+	{
+		translation 120 2 -125
+		scale 7 7 7
+		children 
+		[
+			Inline
+			{														
+				url	"item\hang\khayle.wrl"
+			}
+		]
+	}
+					Transform
+	{
+		translation 90 -19.5 -125
+		scale  1 1 1
+		rotation 0 1 0 1.57
+		children 
+		[
+			Inline
+			{														
+				url	"item\hang\dưa hấu.wrl"
+			}
+		]
+	}
+						Transform
+	{
+		translation 60 1.5 -125
+		scale  7 7 7
+		rotation 0 1 0 3.14
+		children 
+		[
+			Inline
+			{														
+				url	"item\hang\khaycam.wrl"
+			}
+		]
+	}
+	   Transform
+	   {
+			translation	130 -13 -10
+			scale 3 3 3
+			children
+			[
+				Inline 
+				{
+					url	"item\hop 1.wrl"
+				}
+			]
+	   }
+	Transform
+	{
+		translation 130 22 60
+		rotation 0 1 0 1.57
+		scale 10 10 10
+		children 
+		[
+			Inline
+			{
+				url	"item\hang\khaytao.wrl"
+			}
+		]
+	}
+	Transform
+	{
+		translation 80 -15 40
+		
+		scale 10 10 10
+		children 
+		[
+			Inline
+			{
+				url	"item\hang\hopTao.wrl"
+			}
+		]
+	}
+	Transform
+	{
+		translation	80 0 100
+		scale 10 10 10
+		children [
+			Inline
+			{
+				 url "item\hang\hopCam.wrl"
+			}
+		]
+	}
+	Transform
+	{
+		rotation 0 1 0 1.57
+		scale 10 10 10
+		translation	 130 15 180
+	   children 
+	   [
+			Inline
+			{
+				url	"item\hang\khayle.wrl"
+			}
+	   ]
+	}
+	Transform
+	{
+		
+		scale 10 10 10
+		translation	 80 0 220
+		children 
+		[
+			Inline
+			{
+				url	"item\hang\hople.wrl"
+			}
+		]
+	}
+	#Nguoi ngồi 1
+	  	Transform
+	{
+		rotation 0 1 0 1.54
+		scale 4.5 4.5 4.5
+		translation	 105 -3.5 -5
+		children 
+		[
+			Inline
+			{
+				url	"item\nguoingoi.wrl"
+			}
+		]
+	}
+	#Nguoi ngồi 1
+	  	Transform
+	{
+		rotation 0 1 0 1.54
+		scale 4.5 4.5 4.5
+		translation	 80 -3.5 -90
+		children 
+		[
+			Inline
+			{
+				url	"item\nguoingoi.wrl"
+			}
+		]
+	}
+	#Nguoi ngồi 2
+	 Transform
+	{
+		rotation 0 1 0 1.54
+		scale 4.5 4.5 4.5
+		translation	 105 -3.5 55
+		children 
+		[
+			Inline
+			{
+				url	"item\nguoingoi2.wrl"
+			}
+		]
+	}
+	#Nguoi ngồi 3
+	Transform
+	{
+		rotation 0 1 0 1.54
+		scale 4.5 4.5 4.5
+		translation	 105 -3.5 190
+		children 
+		[
+			Inline
+			{
+				url	"item\nguoingoi3.wrl"
+			}
+		]
+	}
+	Transform {
+		translation 130 15 120
+		children [	DEF khaycam
+	   	Transform
+	{
+		rotation 0 1 0 1.57
+		scale 10 10 10
+		children 
+		[	   
+			
+			Inline
+			{
+				url	"item\hang\khaycam.wrl"
+			}
+		]
+	}
+]}
+Transform
+	{
+		rotation 0 1 0 -1.57
+		scale 4 4 4
+		translation	 150 -6 40
+		children 
+		[
+			Inline
+			{
+				url	"item\nguoi2.wrl"
+			}
+		]
+	}
+	#đằng sau
+	Transform
+	{
+		translation	200 -250 350
+		scale 40 20 15
+		rotation 0 1 0 3.14
+		children
+		[
+			Inline
+			{
+				url	"item\sapbanhang.wrl"
+			}
+		]
+	}
+
+	#đường vào
+	Transform {
+			translation	0 -3 0
+		children
+	Inline
+	{
+		url	"item\duongvao.wrl"
+	}
+	}
+	#cong
+	Transform {
+		translation	-350 40 -300
+		scale 25 15 20
+		rotation 0 1 0 1.57
+		children 
+		[
+			Inline
+			{
+				url	"item\cong.wrl"
+			}
+		]
+	}
+	# ngoai duong
+	Transform {
+		translation	-670 -16 0
+		scale  10 10 10
+		rotation 0 1 0 1.57
+		children [
+			Inline {
+				url	"nhon.wrl"
+			}
+		]
+	}
+	#hop ben trong
+DEF view Viewpoint {
+    position 0 0 -300
+    orientation 0 1 0 3.14
+}
+				
+Viewpoint {
+    fieldOfView 1
+    jump TRUE
+    description "v1"
+    orientation 1 0 0 -1
+    position 0 200 100
+}
+Viewpoint {
+    fieldOfView 0.5
+    jump TRUE
+    description "v2"
+    orientation 0 1 0 3.14
+    position 0 0 220
+}
+Viewpoint {
+    fieldOfView 0.5
+    jump TRUE
+    description "v2"
+    orientation 0 1 0 3.14
+    position 0 0 350
+}
+#Kho hàng đối diện đường đi
+Transform
+{
+		translation	345 -12 397
+		scale 10 10 10
+		rotation 0 1 0 3.14
+		children
+		[
+			Inline 
+			{
+				url	"item\khohangso1.wrl"
+			}
+		]
+}
+#ô tô bên trái	 
+Transform
+	 {
+		translation	 420 -20 250
+		scale 8 8 8
+		
+		children
+		[
+			Inline
+			{
+				url	"item\xechohang.wrl"
+			}
+		]
+	 }
+#Kho hàng đối bên tay phải
+Transform
+{
+		translation	-46.5 -12 246
+		scale 10 10 10
+		rotation 0 1 0 1.57
+		children
+		[
+			Inline 
+			{
+				url	"item\khohangso1.wrl"
+			}
+		]
+}
+#Kho hàng bên tay trái
+Transform
+{
+		translation	442 -12 -46
+		scale 10 10 10
+		rotation 0 1 0 -1.57
+		children
+		[
+			Inline 
+			{
+				url	"item\khohangso1.wrl"
+			}
+		]
+}
+#Kho hàng bên tay trái
+Transform
+{
+		translation	442 -12 120
+		scale 10 10 10
+		rotation 0 1 0 -1.57
+		children
+		[
+			Inline 
+			{
+				url	"item\KhoHangChinhGiua.wrl"
+			}
+		]
+}
+#kho hàng bên phải đối diện đường đi
+Transform
+{
+		translation	57 -12 397
+		scale 10 10 10
+		rotation 0 1 0 1.57
+		children
+		[
+			Inline 
+			{
+				url	"item\KhoHangChinhGiua.wrl"
+			}
+		]
+}
+#Kho hàng đối bên tay phải
+Transform
+{
+		translation	-46.5 -12 130
+		scale 10 10 10
+		rotation 0 1 0 1.57
+		children
+		[
+			Inline 
+			{
+				url	"item\KhoHangChinhGiua.wrl"
+			}
+		]
+}
+Transform
+{
+		translation	-42 -12 -40
+		scale 10 10 10
+		rotation 0 1 0 0
+		children
+		[
+			Inline 
+			{
+				url	"item\khohangso1.wrl"
+			}
+		]
+}
+#Người đứng bên trái
+Transform
+{
+		translation	280 -3 100
+		rotation 0 1 0 1.54
+		scale 4.5 4.5 4.5
+		children
+		[
+			Inline 
+			{
+				url	"item\nguoi4.wrl"
+			}
+		]
+}
+Transform
+{
+		translation	280 -3 30
+		rotation 0 1 0 1.54
+		scale 4.5 4.5 4.5
+		children
+		[
+			Inline 
+			{
+				url	"item\nguoi3.wrl"
+			}
+		]
+}
+Transform 
+{
+	children 
+		[
+			Inline
+			{
+				url	"item\di1.wrl"
+			}
+		]
+}

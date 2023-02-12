@@ -1,0 +1,391 @@
+#VRML V2.0 utf8
+
+#dau
+Transform
+{
+	translation	0 -0.4 0
+	scale 1.3 1.3 1.3
+	children
+	[
+		Inline 
+		{
+			url	"daunguoi.wrl"
+		}
+	]
+}
+Transform
+{
+	translation	0 1.2 0
+	children
+	[
+		Shape
+		{
+				  appearance Appearance	
+			{
+				material Material {
+						ambientIntensity .0567
+					diffuseColor .62 .61 .52
+					specularColor .53 .56 .08
+					shininess .19
+					emissiveColor .18 .18 .15
+
+				}
+
+			}
+			geometry Cylinder
+			{
+				height 1
+				radius 0.3
+			}
+		}
+	]
+}
+Transform
+{
+	translation 0 0.35 0
+	scale 2 1 1
+	children 
+	[
+		Shape
+		{
+			appearance Appearance
+			{
+				texture	ImageTexture
+				{
+					url	"anh\mauao2.png"
+				}
+
+			}
+			geometry Cylinder
+			{
+				radius 0.5
+				height 1.5
+			}
+		}
+	]
+}
+#tay
+Transform
+{
+	translation	-1 0.8 0
+	scale 1.5 1 1
+	children
+	[
+		Shape
+		{
+			appearance Appearance
+			{
+				texture	ImageTexture
+				{
+					url	"anh\mauao2.png"
+				}
+
+			}
+			geometry Sphere
+			{
+				radius 0.3
+			}
+		}
+	]
+}
+Transform
+{
+	translation	1 0.8 0
+	scale 1.5 1 1
+	children
+	[
+		Shape
+		{
+			appearance Appearance
+			{
+				texture	ImageTexture
+				{
+					url	"anh\mauao2.png"
+				}
+
+			}
+			geometry Sphere
+			{
+				radius 0.3
+			}
+		}
+	]
+}
+Transform
+{
+		translation	-1.25 0.15 0
+	rotation  0 0 1 -0.1
+	children
+	[
+		Shape
+		{
+			appearance Appearance
+			{
+				texture	ImageTexture
+				{
+					url	"anh\mauao2.png"
+				}
+
+			}
+			geometry Cylinder
+			{
+				height 1.5
+				radius 0.2
+			}
+		}
+	]
+
+}
+Transform
+{
+	translation	1.25 0.15 0
+	rotation 0 0 1 0.1
+	children
+	[
+		Shape
+		{
+			appearance Appearance
+			{
+				texture	ImageTexture
+				{
+					url	"anh\mauao2.png"
+				}
+
+			}
+			geometry Cylinder
+			{
+				height 1.5
+				radius 0.2
+			}
+		}
+	]
+
+}
+ Transform
+  {
+   translation 1.35 -0.8 0
+   scale 1 1.5 1
+
+	  children
+	  [
+		  Shape
+		  {
+			  appearance Appearance
+			{
+				material Material {
+				ambientIntensity .0567
+					diffuseColor .62 .61 .52
+					specularColor .53 .56 .08
+					shininess .19
+					emissiveColor .18 .18 .15
+
+				}
+
+			}
+			  geometry Sphere
+			  {
+			  radius 0.15}
+		  }
+	  ]
+  }
+   Transform
+  {
+   translation -1.35 -0.8 0
+   scale 1 1.5 1
+	  children
+	  [
+		  Shape
+		  {
+			   appearance Appearance
+			{
+				material Material {
+				ambientIntensity .0567
+					diffuseColor .62 .61 .52
+					specularColor .53 .56 .08
+					shininess .19
+					emissiveColor .18 .18 .15
+
+				}
+
+			}
+			  geometry Sphere
+			  {
+			  radius 0.15}
+		  }
+	  ]
+  }
+  #quan
+  Transform
+  {
+	  translation 0 -0.7 0
+	  scale	2 1 1
+	  children 
+	  [
+		  Shape
+		  {
+			   appearance Appearance
+			   {
+				   material Material {
+					   diffuseColor 0 0 0
+					   specularColor .29 .3 .29
+					   ambientIntensity 0
+					   shininess .08
+				   }
+
+			   }
+			geometry Cylinder
+			{
+				radius 0.5
+				height 0.6
+			}
+		}
+	]
+		  
+	  
+  }
+  #chan
+  Transform
+  {
+	  translation 0.5 -2.1 0
+	  scale	1 1.5 0.7
+	  rotation 1 0 0 3.14
+	  children 
+	  [
+		  Shape
+		  {
+			  appearance Appearance
+			   {
+				   material Material {
+					   diffuseColor 0 0 0
+					   specularColor .29 .3 .29
+					   ambientIntensity 0
+					   shininess .08
+				   }
+
+			   }
+			  geometry Cone
+			  {
+				  height 1.5
+				  bottomRadius 0.4
+			  }
+		  }
+	  ]
+  }
+  Transform
+  {
+	  translation -0.5 -2.1 0
+	  scale	1 1.5 0.7
+	  rotation 1 0 0 3.14
+	  children 
+	  [
+		  Shape
+		  {
+			  appearance Appearance
+			   {
+				   material Material {
+					   diffuseColor 0 0 0
+					   specularColor .29 .3 .29
+					   ambientIntensity 0
+					   shininess .08
+				   }
+
+			   }
+			  geometry Cone
+			  {
+				  height 1.5
+				  bottomRadius 0.4
+			  }
+		  }
+	  ]
+  }
+  Transform
+  {
+	  translation 0.5 -2.5 0
+	  children 
+	  [
+		  Shape
+		  {
+			  appearance Appearance
+			   {
+				   material Material {
+					   diffuseColor 0 0 0
+					   specularColor .29 .3 .29
+					   ambientIntensity 0
+					   shininess .08
+				   }
+
+			   }
+			  geometry Cylinder
+			  {
+				  height 1.5
+				  radius 0.25
+			  }
+		  }
+	  ]
+  }
+  Transform
+  {
+	  translation -0.5 -2.5 0
+	  children 
+	  [
+		  Shape
+		  {
+			  appearance Appearance
+			   {
+				   material Material {
+					   diffuseColor 0 0 0
+					   specularColor .29 .3 .29
+					   ambientIntensity 0
+					   shininess .08
+				   }
+
+			   }
+			  geometry Cylinder
+			  {
+				  height 1.5
+				  radius 0.25
+			  }
+		  }
+	  ]
+  }
+  Transform
+  {
+	  translation 0.5 -3.3 0.05
+	  scale	0.8 0.5 1.5
+
+	  children
+	  [
+		  Shape
+		  {
+			  geometry Sphere
+			  {
+				  radius 0.3
+			  }
+		  }
+	  ]
+  }
+    Transform
+  {
+	  translation -0.5 -3.3 0.05
+	  scale	0.8 0.5 1.5
+
+	  children
+	  [
+		  Shape
+		  {
+			  geometry Sphere
+			  {
+				  radius 0.3
+			  }
+		  }
+	  ]
+  }
+Transform {
+	translation	1.4 -2.5 0
+	scale 0.55 0.55 0.55
+    children [
+        Inline {
+            url "giotraicay5.wrl"
+        }
+    ]
+}

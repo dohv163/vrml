@@ -1,0 +1,238 @@
+#VRML V2.0 utf8
+
+
+DEF	win Transform {
+	children [
+			DEF	cen TouchSensor	{}
+		DEF	khoa1 Transform {
+	translation	-0.7 0.5 0.05
+	children [
+			
+			DEF	lock Shape {
+			appearance Appearance {
+
+			material Material { 
+
+			diffuseColor 0.5 0.5 0.5
+							  }	
+					      }
+			geometry Box{ size 0.1 0.1 0.1 }
+		}
+			Transform {
+			translation	0 0.65 0
+			children [
+						USE	lock
+					]
+						}
+			]
+			
+				}
+			DEF	khoa2 Transform {
+			translation	0.7 0.5 0.05
+			children [
+			
+			USE	lock
+		
+			Transform {
+			translation	0 0.65 0
+			children [
+						USE	lock
+					]
+						}
+			]
+			
+				}
+
+		 DEF	canh Shape {
+			appearance Appearance {
+
+			material Material { 
+
+			diffuseColor 1 1 1
+							  }	
+					      }
+	geometry Box{ size 1.5 0.1 0.1 }
+}
+		Transform {
+			rotation 0 0 1 1.58
+			translation	 0.75 0.7 0
+			children [
+				USE	canh
+			]
+		}
+		Transform {
+			rotation 0 0 1 1.58
+			translation	 -0.75 0.7 0
+			children [
+				USE	canh
+			]
+		}
+		Transform {
+			
+			translation	 0 1.4  0
+			children [
+				USE	canh
+			]
+		}
+		DEF CUA1 Transform {
+
+			translation -0.7 0.7 0
+			children [
+		
+			Transform {
+				translation	0.325 0 0
+			
+			children[
+			 DEF ve Shape{
+			appearance Appearance {
+
+			material Material { 
+			transparency 0.5
+			diffuseColor 1 1 1
+							  }	
+			      }
+			geometry Box{ size 0.65 1.3 0.1 }
+}
+
+			]
+		}
+	]
+	}
+		DEF CUA2 Transform {
+			translation	0.7 0.7 0
+			children[
+				Transform {
+					translation	-0.325 0 0
+					children [
+						USE	ve
+					]
+				}
+			]
+		}
+		Transform {
+				rotation 0 0 1 1.58
+				translation	0 0.7 0
+			children [
+				   USE canh
+			]
+		}
+	
+  DEF OpenClock TimeSensor {
+
+    enabled FALSE
+
+    cycleInterval 1
+
+    loop FALSE
+
+    startTime 0.0
+
+    stopTime 1
+
+}
+
+DEF CloseClock TimeSensor {
+
+    enabled FALSE
+
+    cycleInterval 1
+
+    loop FALSE
+
+    startTime 0.0
+
+    stopTime 1
+
+}
+
+DEF Door1Open OrientationInterpolator {
+
+ key [ 0.0, 1.0 ]
+
+ keyValue [ 1 0  0 0, 0 1 0 -1.8]
+
+}
+
+DEF Door1Close OrientationInterpolator {
+
+key [ 0.0, 1.0 ]
+
+keyValue [ 0 1 0 -1.8, 0 1 0 0]
+
+}
+DEF Door2Open OrientationInterpolator {
+
+ key [ 0.0, 1.0 ]
+
+ keyValue [ 1 0  0 0, 0 1 0 1.8]
+
+}
+
+DEF Door2Close OrientationInterpolator {
+
+key [ 0.0, 1.0 ]
+
+keyValue [ 0 1 0 1.8, 0 1 0 0]
+
+}
+
+DEF ma Script {
+
+eventIn SFBool turnOn
+
+eventOut SFBool On
+
+eventOut SFBool Off
+
+field SFBool turn FALSE
+
+url "javascript:
+
+function turnOn(val){
+
+if(val){
+
+turn = !turn;
+
+if(turn)
+
+{
+
+On= TRUE;
+
+                        Off=FALSE;
+
+            }
+
+        else
+
+        {
+
+                        On=FALSE;
+
+Off=TRUE;
+
+        }
+
+            }
+
+    }
+
+    "
+
+}
+	]
+ROUTE cen.isActive TO ma.turnOn
+ROUTE ma.On TO  OpenClock.enabled
+ROUTE ma.Off TO CloseClock.enabled
+ROUTE cen.touchTime TO OpenClock.startTime
+ROUTE cen.touchTime TO CloseClock.startTime
+ROUTE OpenClock.fraction_changed TO Door1Open.set_fraction
+ROUTE CloseClock.fraction_changed TO Door1Close.set_fraction
+ROUTE OpenClock.fraction_changed TO Door2Open.set_fraction
+ROUTE CloseClock.fraction_changed TO Door2Close.set_fraction
+ROUTE Door1Open.value_changed TO CUA1.rotation
+ROUTE Door1Close.value_changed TO CUA1.rotation
+ROUTE Door2Open.value_changed TO CUA2.rotation
+ROUTE Door2Close.value_changed TO CUA2.rotation
+}

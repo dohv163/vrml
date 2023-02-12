@@ -1,0 +1,152 @@
+#VRML V2.0 utf8
+DEF ghe  Transform	{
+	children [
+		Shape {
+
+            appearance Appearance {
+
+                        material Material { 
+
+                        diffuseColor 0 .5 0.0
+
+                       
+
+                        }
+
+            }
+
+            geometry Box { size 2 .1 2}
+
+		}
+		Transform {
+			translation	0 -.1 0
+			children [
+					DEF thanh Shape {
+
+            appearance Appearance {
+
+                        material Material { 
+
+                        diffuseColor .5 .5 1
+                        }
+
+            }
+
+            geometry Box { size 2 .1 2}
+
+		}
+		Transform {
+			translation	.9 -1 -.9
+			scale .1 1 1
+			rotation 1 0 0 1.58
+			children [
+				   USE thanh
+
+			]
+		}
+			Transform {
+			translation	.9 -1 0
+			scale .05 1 .9
+			#rotation 0 0 0 1.58
+			children [
+				   USE thanh
+
+			]
+		}
+			Transform {
+			translation	-.9 -1 0
+			scale .05 1 .9
+			#rotation 0 0 0 1.58
+			children [
+				   USE thanh
+
+			]
+		}
+			Transform {
+			translation	-.9 -1 -.9
+			scale .1 1 1
+			rotation 1 0 0 1.58
+			children [
+				   USE thanh
+
+			]
+		}
+		  	Transform {
+			translation	-.9 -1 .9
+			scale .1 1 1
+			rotation 1 0 0 1.58
+			children [
+				   USE thanh
+
+			]
+		}
+			Transform {
+			translation	.9 -1 .9
+			scale .1 1 1
+			rotation 1 0 0 1.58
+			children [
+				   USE thanh
+
+			]
+		}
+			Transform {
+			translation	-.9 1 -.9
+			scale .1 1 1
+			rotation 1 0 0 1.58
+			children [
+				   USE thanh
+
+			]
+		}
+			Transform {
+			translation	.9 1 -.9
+			scale .1 1 1
+			rotation 1 0 0 1.58
+			children [
+				   USE thanh
+
+			]
+		}
+			Transform {
+			translation	0 2 -.9
+			scale .05 1 1
+			rotation 0 1 0 1.58
+			children [
+				   USE thanh
+
+			]
+		}
+					Transform {
+			translation	-.5 1 -.9
+			scale .1 1 1
+			rotation 1 0 0 1.58
+			children [
+				   USE thanh
+
+			]
+		}
+				Transform {
+			translation	-.1 1 -.9
+			scale .1 1 1
+			rotation 1 0 0 1.58
+			children [
+				   USE thanh
+
+			]
+		}
+				Transform {
+			translation	.4 1 -.9
+			scale .1 1 1
+			rotation 1 0 0 1.58
+			children [
+				   USE thanh
+
+			]
+		}
+			]
+		}
+		
+
+	]
+}
+ 

@@ -1,0 +1,41 @@
+#VRML V2.0 utf8
+
+Transform {
+	children [
+		Transform {
+			translation	0 -3 -10
+			children [
+				Shape {
+
+                    appearance Appearance {
+				        	texture ImageTexture{
+								  url "Images/maubac.jpg"
+								  repeatS TRUE
+								  repeatT TRUE
+								  }
+			        }
+                    geometry IndexedFaceSet {
+
+                        coord Coordinate {
+
+                            point [-7 0 0,-2 10 0,2 10 0,7 0 0]
+
+                        }
+
+                        coordIndex [0 1 2 3 ]
+
+               
+                        colorIndex [1 1]
+
+                        colorPerVertex FALSE
+
+                        solid FALSE
+                
+
+                    }
+				}
+
+			]
+		}
+	]
+}

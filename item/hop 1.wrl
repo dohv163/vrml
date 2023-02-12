@@ -1,0 +1,12 @@
+#VRML V2.0 utf8
+
+Shape {
+    geometry Box {
+        size 5 3 5
+    }
+    appearance Appearance {
+        texture ImageTexture {
+            url "anh/hop.jpg"
+        }
+    }
+}

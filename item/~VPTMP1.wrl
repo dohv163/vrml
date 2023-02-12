@@ -1,0 +1,123 @@
+#VRML V2.0 utf8
+
+Group{
+children[
+Transform
+{
+translation	30 -15 0
+children[
+Transform
+{
+translation -80 0 -300
+scale 200 1 100
+children
+[
+Shape
+{
+appearance Appearance
+{
+material Material
+{
+diffuseColor .251 .271 .176
+specularColor .21 .11 .11
+ambientIntensity .0633
+shininess .09
+}
+}
+geometry Box
+{
+size 3 1 1
+}
+}
+]
+}
+Transform
+{
+translation 170 0 -50
+scale 100 1 200
+children
+[
+Shape
+{
+appearance Appearance
+{
+material Material
+{
+diffuseColor .251 .271 .176
+specularColor .21 .11 .11
+ambientIntensity .0633
+shininess .09
+}
+}
+geometry Box
+{
+size 1 1 3
+}
+}
+]
+}
+]
+}
+]
+}
+
+DEF oto
+Transform
+{
+translation -200 -15 -270
+scale 8 8 8
+
+children[
+Inline
+{
+url	"oto.wrl"
+}
+DEF DoorSense ProximitySensor{
+
+center -10 10 0
+
+size 10000 10000 10000
+
+}
+
+]
+}
+
+DEF time1 TimeSensor{
+
+enabled FALSE
+
+cycleInterval 10
+
+loop FALSE
+
+startTime 0.0
+
+stopTime 1
+
+
+
+
+}
+
+
+
+
+DEF	Oni OrientationInterpolator{
+key[0,0.15,0.35,0.55,0.75,0.9,1.0]
+keyValue[0 1 0 0,0 1 0 0,0 1 0 0,0 1 0 0,0 1 0 -1.57,0 1 0 -1.57,0 1 0 -1.57,0 1 0 -1.57]
+}
+DEF Pos PositionInterpolator{
+key[0,0.15,0.35,0.55,0.75,0.9,1.0]
+keyValue[-200 -15 -270,-150 -15 -270,0 -15 -270,150 -17 -270,190 -17 -270,190 -17 150,190 -17 200]
+
+}
+ROUTE DoorSense.isActive TO time1.enabled
+ROUTE	DoorSense.enterTime	TO	time1.startTime
+
+ROUTE time1.fraction_changed TO Pos.set_fraction
+ROUTE Pos.value_changed TO	oto.translation
+
+ROUTE time1.fraction_changed TO Oni.set_fraction
+ROUTE Oni.value_changed	TO oto.rotation
+

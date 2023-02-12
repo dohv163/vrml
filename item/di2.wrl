@@ -1,0 +1,50 @@
+#VRML V2.0 utf8
+ DEF nguoi
+Transform 
+{
+
+	children
+	[		 
+		Inline
+		{
+			url	"nguoicd.wrl"
+		}
+		DEF DoorSense ProximitySensor {
+
+        center -10  10  0
+
+        size 10000 10000 10000	}
+	]
+	
+
+}
+
+
+
+DEF t TimeSensor 
+{
+	enabled	TRUE
+	cycleInterval 
+	40
+	loop TRUE
+	startTime 0.0
+	stopTime 1.0
+}
+DEF	p PositionInterpolator
+{
+	key	[0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1]
+	keyValue [0 0 0,10 0 0,25 0 0,35 0 0,43 0 0, 43 0 -20 ,43 0 -40,43 0 -55,43 0 -70,43 0 -90 ]
+}
+
+DEF	oi
+OrientationInterpolator	
+{
+	key	[0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1]
+	keyValue [0 1 0 0,0 1 0 0,0 1 0 0,0 1 0 0,0 1 0 1.57,0 1 0 1.57,0 1 0 1.57,0 1 0 1.57,0 1 0 1.57,0 1 0 1.57]
+}
+ROUTE DoorSense.isActive TO	t.enabled
+ROUTE DoorSense.enterTime TO t.startTime
+   ROUTE t.fraction_changed	TO oi.set_fraction
+   ROUTE oi.value_changed TO nguoi.rotation
+ROUTE t.fraction_changed TO	p.set_fraction
+ROUTE p.value_changed TO nguoi.set_translation

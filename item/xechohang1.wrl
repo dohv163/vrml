@@ -1,0 +1,54 @@
+#VRML V2.0 utf8
+
+	 DEF oto
+	Transform
+	{
+		translation	 -200 -15 -270
+		scale 8 8 8
+
+		children [
+			Inline
+			{
+				url	"xechohang.wrl"
+			}
+			DEF DoorSense ProximitySensor {
+
+        center -10  10  0
+
+        size 10000 10000 10000
+
+}
+
+		]
+	}
+
+DEF time1 TimeSensor {
+
+            enabled FALSE
+
+    cycleInterval 30
+
+    loop FALSE
+
+    startTime 0.0
+
+    stopTime 1
+}
+DEF	Oni OrientationInterpolator	{
+	  key [0 , 0.15,0.35,0.55,0.75, 0.9,1.0 ]
+	keyValue [0 1 0 0,0 1 0 0,0 1 0 0,0 1 0 0,0 1 0 -1.57,0 1 0 -1.57,0 1 0 -1.57 , 0 1 0 -3.14]
+}
+DEF Pos PositionInterpolator {
+       key [0 , 0.15,0.35,0.55,0.75, 0.9,1.0 ]
+	 keyValue [ -200 -15 -270 , -150 -15 -270, 0 -15 -270,150 -15 -270,190 -15 -270,190 -15 150,190 -15 400]
+
+}
+ROUTE DoorSense.isActive TO time1.enabled
+ROUTE	DoorSense.enterTime	TO	time1.startTime			   
+							  
+ROUTE time1.fraction_changed TO Pos.set_fraction
+ROUTE Pos.value_changed TO	oto.translation
+
+ROUTE time1.fraction_changed TO Oni.set_fraction
+ROUTE Oni.value_changed	TO oto.rotation
+									  

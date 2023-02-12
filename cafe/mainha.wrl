@@ -1,0 +1,35 @@
+#VRML V2.0 utf8
+
+Transform {
+	children [
+		Transform {
+			children [
+				Shape {
+
+                    appearance Appearance {
+				        texture	ImageTexture {url "Images/nensang.jpg"}
+			        }
+                    geometry IndexedFaceSet {
+
+                        coord Coordinate {
+
+                            point [-17.6 0 0, 0 8 0, 17.6 0 0]
+
+                        }
+
+                        coordIndex [0 1 2 ]
+
+               
+                        colorIndex [1 1]
+
+                        colorPerVertex FALSE
+
+                        solid FALSE
+                
+
+                    }
+				}
+			]
+		}
+	]
+}
